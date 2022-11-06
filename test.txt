@@ -11,12 +11,10 @@ public class Main {
     public static void main(String[] args) throws IOException {
         StringBuilder text = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader("test.txt"))) {
-            reader.lines().forEach(s -> {
-                text.append(s);
-                text.append("\n");
-            });
+            reader.lines().forEach(s -> {text.append(s); ext.append("\n");});
         }
-
+        //$ ()(()
+        int a = ( 5avc + 2 ) * 3 ;
         Analyzer analyzer = new Analyzer();
         analyzer.analyze(text.toString(), buildPatterns());
     }
